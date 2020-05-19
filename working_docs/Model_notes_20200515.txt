@@ -1,0 +1,14 @@
+Model_notes_20200515.txt
+
+overall structure:
+- 2 classes:
+	- iteration
+	- sequence
+- 1 function:
+	- run_model
+
+- three scenarios run: (stored as object/vars)
+	-baseline
+	- invest_scenario
+	- invest_loan_scenario
+	
