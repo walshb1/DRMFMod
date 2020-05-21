@@ -3,12 +3,57 @@ Model_notes_20200515.txt
 overall structure:
 - 2 classes:
 	- iteration
+		-
 	- sequence
+		-
+
 - 1 function:
 	- run_model
+		- this sets all the parameters with defaults
+		- 
 
 - three scenarios run: (stored as object/vars)
 	-baseline
 	- invest_scenario
 	- invest_loan_scenario
-	
+
+program run:
+1] runmodel calls program
+	2] 
+
+
+equations:
+production and labor:
+- production: pg 25, eqn 51 (pg26)
+
+- labor: "labor Market" pg 17, eqn 22
+
+notes to self: 
+gamma = capital stock decay
+
+Questions:
+- how exactly does our model compute & store values.
+- trying to find the entry point into our equations
+-- implementation point options:
+	- class iteration--> # annual endogenous --> ergo: def update.stocks ?
+		-- as part of last year functionality?
+
+- how to integrate the labor and production functions
+	- data driven? --> access to the WB database?
+	- implementation as parameterization?
+	- fixed or updating responses based on shock timing?
+	-
+
+
+dr-mfmod questions:
+- capex = capital expense
+- adaptex = adaptation expense??? -- cost to set up adaptation?
+
+- line: class sequence -- seed--> is this just being stored as an object variable for accounting purposes and inquiry? I dont see it being intitialized or defined anywhere and is not coming from anything
+
+- inside 'iteration' class:
+	- what is 'get_aal_function' ?
+	-
+
+-
+-
