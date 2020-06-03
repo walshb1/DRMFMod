@@ -1,0 +1,72 @@
+work on original projects--
+- questions for the normal teams--
+- macro economic impacts on the philipines
+- tropical cyclone season is approaching
+- need to study how this new reality affect capacity for disasters
+	- and strategy for doing so
+- 2 models:
+	- 1 is household model based on FIES - shock income // break assets and see how long they rebuild, optimization problem
+	- households take x long to recover, into poverty for y amount of time, baseline shifts.
+- model 2:
+	- asset stock, puts off GDP- 
+	- stocatsic disaster, that generates loss on macro perspective
+	- 
+in parallel -- resilience capital ** stock
+	- stock for reducing losses for disasters
+	- every year, govt has choice between investing in capital stock, resilience stock, or not
+
+00> we want to understand how COVID affects these, bank sells different policies for this etc, and will underwrite an insurance package based on these ideas,
+00> fast-loans, providing the money right away
+00> massive loan up to 5% of GDP or 500 million to help with aftermath recovery
+
+CATDBL -- catastrophe deferred buyout option
+resilience stock
+-
+- we expect the resilience should be built to cover the small cheap events, and not strive to prevent 100yr storm, but mitigate in various ways
+
+- want to take into account effective productivity losses from covid
+- deadline: intermediate results end of June
+- 
+
+macro model is also montecarlo based
+- runs lots of simulations and see how they all add up
+- 
+model 1: 40k households, 50 hazards-- lots of optimization steps
+
+to do this well, macro model is the place-- 
+to get going:
+B -- will resend me the code, i will get familiar
+	-- pretty big structural changes need to be made--
+		- no labor in the model
+		-- need to add (currently just capital)
+B -- will send a paper too
+ -- structural development: put in labor and production function is correct
+ -- MFmod (production model)
+ --	paper from aug/sept on that
+
+ -- and then calibrate to economy of the phillipines
+ -- have potential regions
+
+ -- incorporate climate change and disasters-- they have one disaster every 10 years-- huge space to improve upon the outcomes
+ -- macro-econ component is critical to see
+ -- 
+
+ - question of diverting capital stock to income stream etc
+ - rate of return on household income etc
+ - 
+ -- this week: 3 daysa week, get model running, and compare to mfMOD paper to verify
+ -- **VALIDATE PRODUCTION FUNCTION and ADD LABOR TO IT **
+ -- MFMOD paper lists equations and data that they use to calibrate-- use this to pull in the labor data
+ -- referencing WB database with API --
+ -- as think about structure, make sure to pull in this API for database etc --
+ -- take note of variables referencing -- 
+ -- think about it being scalable --
+ -- for us, representation of disasters in MFMod --
+ -- post covid universe is one flavor --
+
+ -- longterm goal is to keep me. -- 
+
+ meeting weds or thurs -- 830pm PST -- decision meeting
+ xubei -- she has incorporated our work into report on phillipines
+ -- will be discussed by phillipines portfolio managers
+ -- 

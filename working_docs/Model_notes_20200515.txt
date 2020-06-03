@@ -24,9 +24,18 @@ program run:
 
 equations:
 production and labor:
-- production: pg 25, eqn 51 (pg26)
+- production: pg 25/26, eqn 51 (pg26)
 
 - labor: "labor Market" pg 17, eqn 22
+
+implementation point:
+class iteration:
+...
+def update_stocks(...):
+...
+def initialize_stocks(..):
+
+--> implement by generating GDP contribution from equation parameters
 
 notes to self: 
 gamma = capital stock decay
@@ -55,5 +64,11 @@ dr-mfmod questions:
 	- what is 'get_aal_function' ?
 	-
 
--
+
+NOTES: 20200522-->
+Production Accounts: (pg 25)
+	-' in the absence of sectoral factor inputs..'
+	- Here:
+		GDP = AGR + IND + SRV
+		
 -
