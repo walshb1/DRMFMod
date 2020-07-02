@@ -1,0 +1,63 @@
+Changelog_drmfmod_mode_psdev2.txt
+Date: 20200701
+author: P.Saylor
+contact: saylor.pat@gmail.com
+
+Overview:
+1] Began implementing functionality via modifications to  <class> 'iteration'
+	- intent: modify disaster!! code structure to reflect covid-shock vs natural disaster
+	- integrate code into already existing structure
+
+2] Primary issue with this approach was also needing to modify GDP to components: IND, SRV, and AGR. This  did not allow for as much flexibility because GDP is deeply embedded in existing script
+
+3] Issue with implementing GDP shocks & recovery: need to determine theoretical framework for agriculture, srv, and ind shocks. Could possibly build on top of generalized covid_phl project as input model. could also explicitly generate a shock from similar FIES/LFS data approach. In either case, GDP as a function of these components reflects the need to add granularity to recovery of each in GDP context.
+
+
+4] Path forward:
+	- Current approach:
+	 	- Focused on modifying <Disaster> and <GDP> in existing framework. While possible, tracking implementation changes through processing presents overhead issue.
+
+	- Alternate approach:
+		- focus on 2 new interaction classes: <class> sector_shock, <class>  gdp
+		- build separate interation & interactions with implementation point of var <gdp> in <class> 'sequence', and <new var> 'sect_shock' in <class> 'iteration'
+		- run interaction following rest of model mechanics, maintain same iteration structure, carry through new outputs
+
+
+
+Change Log:
+
+Lines: <>
+
+<15> <42,43> add parameters: covid_opt, covid_shock
+	- covid_opt: 0, 1 --> turn on covid functionality
+	- covid_shock: 0.0-1 --> initialize severity of shock
+
+<122-167> def get_damages(self):
+	description:
+		key output: self_damage_fraction
+          	- build out: sect_disruption --> magnitude of sectoral level disruptions
+            - set a default.
+            - here is where country specific data could be incorporated into the model
+            
+
+
+<258-304> def gdp_by_component(self):
+	description:
+		Create gdp by components here
+	            - create components matching WB MFMOD
+	            - will need to integrate into other calcs
+	            
+	        gdp components: eqn 51, pg 25/6
+	        
+	        eqn 53:
+	        GDP = sum { agriculture + industry + services}
+	            -
+	            -
+	            - build this out as a scenario for the 1st pass; covid affects each of these areas x amount, -- get avg weighting based on proportion of
+	            -- economy represented in that category
+	            --- use this value to modulate down the GDP in each turn successively
+	            ---- next step: implement a lingering recovery rate for each of the sectors considered.
+	            
+	        eqn 52: ...
+
+<>
